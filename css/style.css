@@ -85,9 +85,14 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  background-color: var(--basic-white);
 }
 
 /* Features */
+
+.features {
+  /* background-color: var(--basic-white); */
+}
 
 .features p {
   line-height: 21px;
@@ -96,6 +101,10 @@ img {
 
 .features ul {
   list-style: none;
+}
+
+.features .attributes-list {
+  background-color: var(--basic-white);
 }
 
 .features-list h3,
@@ -116,6 +125,10 @@ img {
 
 /* Appointment */
 
+.appointment {
+  background-color: var(--basic-white);
+}
+
 .appointment-question {
   font-size: 30px;
   line-height: 24px;
@@ -133,6 +146,7 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .socials-list {
