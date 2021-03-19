@@ -94,17 +94,36 @@ img {
 /* Main navigation */
 
 .main-nav {
+  position: relative;
   font-size: 14px;
+  line-height: 26px;
   font-weight: bold;
   background-color: var(--basic-white);
+  text-align: center;
 }
 
 .nav-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 138px / 2);
+  width: 138px;
+  height: 70px;
+}
+
+.nav-list li {
+  text-align: left;
+}
+
+.nav-list li:nth-of-type(n + 3) {
+  text-align: right;
 }
 
 .nav-list a:not([href]) {
