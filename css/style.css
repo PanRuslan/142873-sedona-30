@@ -76,6 +76,10 @@ img {
   height: auto;
 }
 
+p {
+  margin: 0;
+}
+
 .button {
   font-size: inherit;
   line-height: inherit;
@@ -142,6 +146,7 @@ img {
 /* Main */
 
 .slogan {
+  padding: 42.5px 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -155,6 +160,12 @@ img {
   color: var(--basic-extra-black);
 }
 
+.features .features-subhead {
+  background-color: var(--basic-white);
+  line-height: 26px;
+  padding-bottom: 51px;
+}
+
 .features ul {
   list-style: none;
   margin: 0;
@@ -163,12 +174,10 @@ img {
 
 .features-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
   grid-template-areas:
-  "real-city real-city real-city"
-  "devil-bridge devil-bridge devil-bridge"
-  "square road tourists";
+    "real-city real-city real-city"
+    "devil-bridge devil-bridge devil-bridge"
+    "square road tourists";
 }
 
 .real-city {
@@ -181,14 +190,26 @@ img {
 
 .square {
   grid-area: square;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .road {
   grid-area: road;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .tourists {
   grid-area: tourists;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .feature-item-wrapper {
@@ -198,25 +219,46 @@ img {
   background-color: var(--basic-light-blue);
 }
 
+.feature-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .feature-item-wrapper p {
   color: var(--basic-white);
 }
 
-.feature-item-wrapper .right {
+.right {
+  grid-template-columns: auto 1fr;
+}
+
+.right .feature-item-text{
   order: 1;
 }
 
 .features-list .attributes-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  height: 330px;
   background-color: var(--basic-white);
+}
+
+.attributes-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 62px;
+  padding-bottom: 82px;
 }
 
 .features-list h3,
 .features-list h4 {
-  font-style: 21px;
+  margin: 0;
+  font-size: 21px;
   line-height: 21px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 
@@ -246,8 +288,16 @@ img {
   color:var(--basic-white);
 }
 
+.filter-form {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 12px 72px;
+}
+
 .filter ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter legend {
@@ -262,6 +312,12 @@ img {
 }
 
 /* Found housing list */
+
+.found-housing-header {
+  padding: 29px 73px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .found-housing {
   background-color: var(--basic-white);
@@ -383,6 +439,7 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
