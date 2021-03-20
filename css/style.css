@@ -46,6 +46,7 @@
   margin: 0 auto;
   padding: 0;
   width: 1200px;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   background-color: transparent;
   font-family: PTSans, Arial, sans-serif;
   font-weight: normal;
@@ -266,6 +267,11 @@ p {
 /* Appointment */
 
 .appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 291px;
   background-color: var(--basic-white);
 }
 
@@ -278,6 +284,25 @@ p {
 .appointment-offer {
   line-height: 24px;
   color: var(--basic-extra-gray);
+}
+
+.appointment a {
+  padding: 30px 0;
+  width: 568px;
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  font-size: 21px;
+}
+
+.appointment a:hover,
+.appointment a:focus {
+  background-color: var(--basic-hover-brown);
+  color: var(--basic-white);
+}
+
+.appointment a:active {
+  background-color: var(--basic-active-brown);
+  color: var(--basic-active-white);
 }
 
 /* Filter */
