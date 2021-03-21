@@ -223,7 +223,8 @@ p {
 .feature-item-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 50px 0;
 }
 
 .feature-item-wrapper p {
@@ -461,6 +462,7 @@ p {
 .main-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  height: 120px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -468,13 +470,65 @@ p {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-socials {
+  margin: auto 0;
+}
+
 .socials-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.socials-list-item a {
+  margin: 0 6px;
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-light-blue);
+}
+
+.socials-list-item a:hover,
+.socials-list-item a:focus {
+  background-color: var(--basic-hover-blue);
+}
+
+.socials-list-item a:active {
+  background-color: var(--basic-active-blue);
+  color: var(--basic-active-white);
+}
+
+.socials-list-item a:active path {
+  opacity: .3;
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: normal;
   font-size: 14px;
+}
+
+.footer-copyright a{
+  padding-left: 8px;
+}
+
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
+  fill: var(--basic-light-blue);
+}
+
+.footer-copyright a:active path {
+  fill: #BDBBBC;
 }
