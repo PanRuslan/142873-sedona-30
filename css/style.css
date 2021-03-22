@@ -339,20 +339,25 @@ p {
 
 /* Found housing list */
 
-.found-housing-header {
-  padding: 29px 73px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .found-housing {
   background-color: var(--basic-white);
+}
+
+.found-housing-header {
+  padding: 29px 73px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 29px;
 }
 
 .found-housing-header p {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.found-quantity {
+  min-width: 135px;
 }
 
 .found-housing-header .sorting {
@@ -369,6 +374,15 @@ p {
   background-color: transparent;
   border: none;
   border-bottom: 1px dashed var(--basic-light-blue);
+  margin-right: 32px;
+}
+
+.sorting .sorting-button:first-of-type{
+  margin-left: 40px;
+}
+
+.sorting .sorting-button:last-of-type {
+  margin-right: 0;
 }
 
 .sorting .selected {
@@ -383,6 +397,7 @@ p {
 
 .sorting .sorting-button:active {
   color: var(--basic-black);
+  border-bottom: none;
 }
 
 .sorting-ascending-descending {
@@ -401,6 +416,7 @@ p {
 
 .housing-list {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
