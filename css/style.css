@@ -332,6 +332,11 @@ fieldset {
   justify-content: space-between;
 }
 
+.filter legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .filter ul {
   list-style: none;
   margin: 0;
@@ -343,9 +348,29 @@ fieldset {
   justify-content: space-between;
 }
 
-.filter legend {
-  font-size: 16px;
-  font-weight: bold;
+.check-box {
+  position: absolute;
+  margin-left: -39px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.check-box-input:checked + .check-box {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.check-box-input:disabled + .check-box {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.check-box-input:checked:disabled + .check-box {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.check-box-label {
+  padding-left: 39px;
 }
 
 .price-and-button {
@@ -388,6 +413,11 @@ fieldset {
   border-radius: 2px;
   width: 137px;
   background-color: transparent;
+}
+
+.price-button:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 /* Found housing list */
