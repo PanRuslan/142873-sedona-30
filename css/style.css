@@ -605,10 +605,6 @@ fieldset {
   align-items: flex-end;
 }
 
-.stars {
-  color: var(--basic-light-blue);
-}
-
 .rate {
   padding: 3px 12px 3px 15px;
   background-color: var(--basic-light-gray);
