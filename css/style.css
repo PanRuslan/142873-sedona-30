@@ -483,18 +483,40 @@ fieldset {
   border-bottom: none;
 }
 
-.sorting-ascending-descending {
-  color: #CACACA;
+.sorting-ascending-descending .sorting-button {
+  border: none;
+  width: 11px;
+  height: 10px;
+  background-color: transparent;
 }
 
-.sorting-ascending-descending:hover,
-.sorting-ascending-descending:focus {
-  color: var(--basic-black);
+.sorting-ascending-descending .ascending {
+  margin-right: 12px;
+  background-image: url("../img/icon-up-gray.svg");
 }
 
-.sorting-ascending-descending:active,
-.sorting-ascending-descending .selected {
-  color: var(--basic-light-blue);
+.sorting-ascending-descending .descending {
+  background-image: url("../img/icon-down-gray.svg");
+}
+
+.sorting-ascending-descending .ascending:hover,
+.sorting-ascending-descending .ascending:focus {
+  background-image: url("../img/icon-up-black.svg");
+}
+
+.sorting-ascending-descending .descending:hover,
+.sorting-ascending-descending .descending:focus {
+  background-image: url("../img/icon-down-black.svg");
+}
+
+.sorting-ascending-descending .ascending:active,
+.sorting-ascending-descending .ascending.selected {
+  background-image: url("../img/icon-up-blue.svg");
+}
+
+.sorting-ascending-descending .descending:active,
+.sorting-ascending-descending .descending.selected {
+  background-image: url("../img/icon-down-blue.svg");
 }
 
 .housing-list {
