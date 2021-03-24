@@ -387,7 +387,7 @@ fieldset {
   margin-bottom: 10px;
 }
 
-.price-and-button .price-show {
+.price-and-button .price-controls {
   margin-bottom: 20px;
   padding: 7px;
   border: 2px solid var(--basic-white);
@@ -397,13 +397,56 @@ fieldset {
   align-items: center;
 }
 
-.price-show span {
+.price-controls  label {
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
   text-align: center;
 }
 
-.price-show > span:first-child {
+.price-controls > label:first-child {
   border-right: 2px solid var(--basic-white);
   border-radius: 2px;
+}
+
+.price-controls input {
+  border: none;
+  width: 60px;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+
+.price-and-button .range-controls {
+  position: relative;
+  height: 23px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-active-white);
+}
+
+.range-controls .bar {
+  height: 2px;
+  width: 70%;
+  background-color: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -10px;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  width: 3.8px;
+  height: 3.8px;
+  background-color: #ABABAB;
+  box-shadow: 0 2px 0 rgba(171, 171, 171, .3);
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 70%;
 }
 
 .price-button {
